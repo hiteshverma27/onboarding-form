@@ -18,6 +18,13 @@
 
 </div>
 
+## Project Highlights
+- Responsive UI
+- Use of CSS variables
+- Use of reusable components
+- Scalable code
+- Use of best practices
+
 ## Pages
 - User info
 - Workspace info
