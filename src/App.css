@@ -1,6 +1,22 @@
+:root{
+    --primary-color:#664de6;
+    --secondary-font-color:#757b8a;
+    --workspace-domain-color:#f8f9fd;
+    --white:#ffffff;
+    --black:#000000;
+    --ouline-color:#757b8a;
+    --border:#757b8a;
+    --error:#ff0000;
+  }
 h1{
     text-align: center;
 }
 span{
-    color: lightgray;
+    color: lightgray;}
+p{
+    color: var(--secondary-font-color);
+}
+.Eden-logo{
+    display: flex;
+    margin: 3rem 0;
 }

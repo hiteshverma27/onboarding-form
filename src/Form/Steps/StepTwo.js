@@ -17,16 +17,9 @@ function StepTwo({ setFormData, formData }) {
           Workspace URL <span>(optional)</span>
         </label>
 
-        <div style={{ display: "flex", width:"108%" }}>
+        <div className="workspaceurl-wrapper">
           <div
-            style={{
-              padding: "0.5rem",
-              outline: "1px solid grey",
-              margin: "1rem 0",
-              color: "white",
-              borderRadius:"2px",
-              backgroundColor:"lightgrey"
-            }}
+            className="workspace-domain"
           >
             www.eden.com/
           </div>

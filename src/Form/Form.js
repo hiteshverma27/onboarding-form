@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { Header } from "../components";
+import EdenLogo from "../assets/Eden-logo";
+import { Button, Header } from "../components";
 import "./Form.css";
 import { headerTitles } from "./StaticData";
 import { StepFour, StepOne, StepThree, StepTwo } from "./Steps";
@@ -63,10 +64,9 @@ function Form() {
 
   return (
     <div className="form-wrapper">
-      <h1>Eden</h1>
+      <h1 className="Eden-logo"><EdenLogo/> Eden</h1>
       <div
-        style={{ display: "flex", padding: "0" }}
-        className="stepper-container"
+        className="stepper-wrapper"
       >
         {steps.map((item, idx) => (
           <div className="stepper-container" key={idx}>
@@ -90,24 +90,22 @@ function Form() {
         <div className="test">
           {step !== 4 && <Header headerTitles={headerTitles} step={step} />}
           {formSteps}
-          {error && <p>{error}</p>}
+          {error && <p className="error-message">{error}</p>}
           {step === 4 ? (
-            <button
+            <Button
+              buttonText="Launch Eden"
               className="submit-button"
               onClick={() => {
                 console.log(formData);
                 alert("All UserData printed on console for further use!");
               }}
-            >
-              Launch Eden
-            </button>
+            />
           ) : (
-            <button
-              className="submit-button"
+            <Button
+              buttonText="Create workspace"
               onClick={() => submitHandler(step, setStep, setError, formData)}
-            >
-              Create workspace
-            </button>
+              className="submit-button"
+            />
           )}
         </div>
       </div>
