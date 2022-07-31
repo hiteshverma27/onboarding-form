@@ -20,6 +20,8 @@
 
 ## Project Highlights
 - Responsive UI
+- Form validation rules using regex
+- Barrel exports
 - Use of CSS variables
 - Use of reusable components
 - Scalable code

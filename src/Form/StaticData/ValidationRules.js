@@ -1,3 +1,5 @@
+// we can use regex to validate the input 
+
 const validationRules = {
   fullName: (value) => value.trim().length >= 2,
   displayName: (value) => value.trim().length >= 2,

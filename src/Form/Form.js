@@ -17,6 +17,7 @@ function Form() {
     userType: "",
   });
 
+  // crete an array [1,2,3,4]
   const steps = Array.from({ length: 4 }, (_, index) => index + 1);
 
   // form steps
