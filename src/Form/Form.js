@@ -88,7 +88,7 @@ function Form() {
         ))}
       </div>
       <div className="main">
-        <div className="test">
+        <div className="form-inputs-container">
           {step !== 4 && <Header headerTitles={headerTitles} step={step} />}
           {formSteps}
           {error && <p className="error-message">{error}</p>}

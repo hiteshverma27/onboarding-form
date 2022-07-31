@@ -1,7 +1,7 @@
 function StepTwo({ setFormData, formData }) {
   return (
     <div>
-      <form className="form">
+      <form className="form-inputs">
         <label className="input-label">Workspace Name</label>
         <input
           className="input-field"
@@ -18,11 +18,7 @@ function StepTwo({ setFormData, formData }) {
         </label>
 
         <div className="workspaceurl-wrapper">
-          <div
-            className="workspace-domain"
-          >
-            www.eden.com/
-          </div>
+          <div className="workspace-domain">www.eden.com/</div>
           <input
             className="input-field workspaceurl-input"
             type="text"
